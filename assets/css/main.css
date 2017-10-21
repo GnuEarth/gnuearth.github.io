@@ -1577,6 +1577,7 @@ ul.alt li:first-child {
 }
 
 ul.icons {
+
   cursor: default;
   list-style: none;
   padding-left: 0;
@@ -2164,12 +2165,47 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   overflow: hidden;
 }
 
-.tiles article>.image img {
+.tiles .image img {
   display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 }
+
+
+/*Blurs image while hovering*/
+.tiles .style1:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+.tiles .style2:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+.tiles .style3:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+.tiles .style4:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+.tiles .style5:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+.tiles .style6:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	transition: 0.5s;
+}
+
+
 
 .tiles article>.image:before {
   -moz-pointer-events: none;
@@ -2192,11 +2228,6 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 .tiles article>.image:after {
-	-webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-filter: blur(5px);
   -moz-pointer-events: none;
   -webkit-pointer-events: none;
   -ms-pointer-events: none;
@@ -2216,6 +2247,7 @@ filter: blur(5px);
   background-size: 100% 100%;
   opacity: 0.5;
   z-index: 2;
+	-webkit-filter: blur(10px);
 
 }
 
@@ -2316,7 +2348,7 @@ body:not(.is-touch) .tiles article:hover>.image {
 
 body:not(.is-touch) .tiles article:hover>.image:before {
   background-color: #333333;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 body:not(.is-touch) .tiles article:hover>.image:after {
@@ -2747,6 +2779,7 @@ body.is-menu-visible #menu .close {
   flex-direction: row;
 }
 
+
 #footer>.inner>*> :last-child {
   margin-bottom: 0;
 }
@@ -2756,10 +2789,14 @@ body.is-menu-visible #menu .close {
   margin-right: 2.5em;
 }
 
+/* old form cannot be used with github
+
 #footer>.inner section:nth-child(2) {
   width: calc(33% - 2.5em);
   margin-left: 2.5em;
 }
+
+*/
 
 #footer>.inner .copyright {
   width: 100%;
